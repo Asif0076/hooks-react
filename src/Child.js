@@ -4,11 +4,15 @@ import { memo } from 'react';
 
 const Child = props => {
   
+    const {counter, updateCounter} = props;
+
+
     console.log("Child is Rendering !!! ");
 
     return (
         <div className='Child'> 
-        <h1>Child</h1>
+        <h1>Child - {counter}</h1>
+        <button onClick={updateCounter}>click</button>
         </div>
   )
 };
