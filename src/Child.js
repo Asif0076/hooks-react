@@ -1,5 +1,6 @@
 import React from 'react' ;
 import "./Child.css";
+import { memo } from 'react';
 
 const Child = props => {
   
@@ -10,6 +11,6 @@ const Child = props => {
         <h1>Child</h1>
         </div>
   )
-}
+};
 
-export default Child;
+export default memo(Child);
